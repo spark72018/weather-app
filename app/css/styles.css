@@ -1,0 +1,153 @@
+/* line 1, app/sass/styles.sass */
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+/* line 6, app/sass/styles.sass */
+body {
+  display: flex;
+  justify-content: center;
+  background: #130303;
+  font-family: 'Josefin Sans', sans-serif; }
+
+/* line 12, app/sass/styles.sass */
+h2 {
+  margin: 0; }
+
+/* line 15, app/sass/styles.sass */
+.mainContainer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 20px; }
+
+/* line 27, app/sass/styles.sass */
+.currentWeatherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20em;
+  width: 100%;
+  color: #D72638;
+  background-color: #130303;
+  animation: 2s fadeIn; }
+
+/* line 37, app/sass/styles.sass */
+.currentWeatherContainer h1 {
+  margin: 0; }
+
+/* line 40, app/sass/styles.sass */
+.currentWeatherContainer h2 {
+  margin: 5px 0 0 0; }
+
+/* line 43, app/sass/styles.sass */
+.currentWeatherContainer h4 {
+  margin: 0px 0px 10px 0px; }
+
+/* line 46, app/sass/styles.sass */
+.currentWeatherContainer h3 {
+  margin: 0; }
+
+/* line 49, app/sass/styles.sass */
+.windBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* line 54, app/sass/styles.sass */
+.forecastContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  height: 24em;
+  width: 13em;
+  background: #111111;
+  box-shadow: 1px 2px 5px 1px #58595b;
+  animation: 2s fadeIn, 2.5s slideFromBottom;
+  color: #B2FFA9; }
+
+/* line 68, app/sass/styles.sass */
+.forecastContainer h1 {
+  margin: 5px 0px 15px 0px; }
+
+/* line 71, app/sass/styles.sass */
+.forecastContainer h3 {
+  margin: 0px; }
+
+/* line 74, app/sass/styles.sass */
+.vertical-divide {
+  position: absolute;
+  top: 2%;
+  left: 98%;
+  margin: 0px;
+  height: 96%;
+  width: 1px;
+  border-right: 3px solid #FF4A1C; }
+
+/* line 83, app/sass/styles.sass */
+.night-divide {
+  position: absolute;
+  top: 2%;
+  left: 99%;
+  margin: 0px;
+  height: 96%;
+  width: 1px;
+  border-right: 2px solid #B2FFA9; }
+
+/* line 92, app/sass/styles.sass */
+.tempContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  top: 0;
+  width: 100%;
+  height: 20%; }
+
+/* line 102, app/sass/styles.sass */
+.windBox {
+  position: relative;
+  top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* line 109, app/sass/styles.sass */
+.humidityBox {
+  position: relative;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em; }
+
+/* line 117, app/sass/styles.sass */
+.precipBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50px; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes slideFromBottom {
+  from {
+    top: 100%; }
+  to {
+    top: 0%; } }
